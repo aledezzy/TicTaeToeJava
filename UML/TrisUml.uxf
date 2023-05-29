@@ -1,0 +1,60 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>710</x><y>150</y><w>350</w><h>490</h></coordinates><panel_attributes>Tris
+--
+- Griglia griglia, grigliaRef
+- boolean turno
+- Thread gameThread
+- boolean isGameRunning
+- String giocatore1 = "", giocatore2 = ""
+- String starting = "", notStarting = ""
+- Scanner in
+- Random gen
+--
++ Tris() 
+
++ inserisci(): void
+
++ verifica(): void 
+
++ pareggio(): boolean
+
++ random(): void
+
++ run(): void
+
+- stop(): void
+
+- processGameLoop(): void
+
+- update(): void
+    
+- render(): void
+    
+- clearConsole(): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>930</x><y>630</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>270</x><y>470</y><w>220</w><h>50</h></coordinates><panel_attributes>TestGriglia
+--
++ main(String[] args) : void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>780</x><y>690</y><w>250</w><h>50</h></coordinates><panel_attributes>Tris Test
+--
++ main(String[] args) : void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>370</x><y>400</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>280</x><y>540</y><w>210</w><h>190</h></coordinates><panel_attributes>Launcher
+--
++ main(String[] args) : void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>350</y><w>200</w><h>40</h></coordinates><panel_attributes>&lt; CONTIENE</panel_attributes><additional_attributes>10;20;180;20</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>610</y><w>250</w><h>40</h></coordinates><panel_attributes>CONTIENE &gt;</panel_attributes><additional_attributes>230;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>250</x><y>160</y><w>290</w><h>250</h></coordinates><panel_attributes>Griglia
+--
++ String[][] griglia;
+--
++ Griglia(int x, int y)
+   
++ toString(): String 
+
++ insert(String segno, int i, int j): void
+
++ row(int n): String[]
+    
++ column(int n): String[]
+
++ diag(): String[]
+
++ invDiag(): String[]
+
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>
